@@ -19,7 +19,7 @@ end
 def get_move(board, player)
   print "Enter a number from 1-9: "
   move = gets.chomp.to_i - 1
-  if board[move] == "X" || board[move] == "O"
+  if board[move] == "X" || board[move] == "O" || move > 8
     print "Enter a different number: "
     move = gets.chomp.to_i - 1
   else
