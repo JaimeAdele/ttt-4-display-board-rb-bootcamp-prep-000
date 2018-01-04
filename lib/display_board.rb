@@ -18,7 +18,7 @@ def o_turn
 end
 
 def play_game
-  x_turn()
+  x_turn(board)
 end
 
 play_game
