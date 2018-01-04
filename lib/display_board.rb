@@ -21,4 +21,4 @@ def play_game(board)
   x_turn(board)
 end
 
-play_game
+play_game(board)
