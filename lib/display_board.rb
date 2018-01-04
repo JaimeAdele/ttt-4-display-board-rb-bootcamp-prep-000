@@ -22,9 +22,8 @@ def get_move(board, player)
   while board[move] == "X" || board[move] == "O" || move > 8
     print "Enter a different number: "
     move = gets.chomp.to_i - 1
-  else
-    board[move] = player
   end
+  board[move] = player
 end
 
 def play_game(board)
