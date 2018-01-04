@@ -8,7 +8,7 @@ end
 
 def x_turn
   print "Enter a number from 1 to 9: "
-  move = gets.chomp.to_i
+  move = gets.chomp
   board[move] = "X"
 end
 
