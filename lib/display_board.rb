@@ -13,8 +13,11 @@ def x_turn(board)
   display_board(board)
 end
 
-def o_turn
-
+def o_turn(board)
+  print "Enter a number from 1-9: "
+  move = gets.chomp.to_i - 1
+  board[move] = "O"
+  display_board(board)
 end
 
 def play_game(board)
