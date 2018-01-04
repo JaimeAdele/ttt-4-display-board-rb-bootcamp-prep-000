@@ -7,22 +7,23 @@ def display_board(board)
 end
 
 def x_turn(board)
-  get_move(board)
-  board[move] = "X"
+  get_move(board, "X")
   display_board(board)
 end
 
 def o_turn(board)
-  board[move] = "O"
+  get_move(board, "O")
   display_board(board)
 end
 
-def get_move(board)
+def get_move(board, player)
   print "Enter a number from 1-9: "
   move = gets.chomp.to_i - 1
   if board[move] == "X" || board[move] == "O"
     print "Enter a different number: "
     move = gets.chomp.to_i - 1
+  else
+    board[move] = player
   end
 end
 
