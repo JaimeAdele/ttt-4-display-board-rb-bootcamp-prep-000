@@ -2,14 +2,14 @@
 # out the current state.
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-def display_board(board)
+def display_board
   puts " #{board[0]} | #{board[1]} | #{board[2]} \n-----------\n #{board[3]} | #{board[4]} | #{board[5]} \n-----------\n #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
 def x_turn
   print "Enter a number from 1 to 9: "
   move = gets.chomp.to_i - 1
-  display_board(board)
+  display_board
 end
 
 def o_turn
