@@ -9,7 +9,7 @@ end
 def x_turn
   print "Enter a number from 1 to 9: "
   move = gets.chomp.to_i - 1
-  
+  display_board
 end
 
 def o_turn
